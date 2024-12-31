@@ -1,8 +1,15 @@
 import "./styles.css"
-import { initailPageLoader, menupage } from "./greeting.js"
+import { initailPageLoader, menupage, clearContent } from "./greeting.js"
 
 const homeBtn = document.getElementById("home")
-homeBtn.addEventListener("click", initailPageLoader)
+homeBtn.addEventListener("click", () => {
+    clearContent()
+    initailPageLoader()
+})
 
 const menuBtn = document.getElementById("menu");
-menuBtn.addEventListener("click", menupage)
+menuBtn.addEventListener("click", () => {
+    clearContent()
+    menupage()
+})
+

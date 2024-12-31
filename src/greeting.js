@@ -10,7 +10,7 @@ import picSeven from "./lamb burger.jpg"
 import picEight from "./mushroom burger.jpg"
 import picNine from "./slider burger.jpg"
 import picTen from "./veggie burger.jpg"
-function CreateImg(src, alt){
+function CreateImg(src, alt){ 
     this.src = src;
     this.alt = alt;
 }
@@ -19,6 +19,7 @@ const image2 = new CreateImg(secondSrc, "Juicy Burger")
 
 export function initailPageLoader(){
     const content = document.getElementById("content");
+    content.innerHTML = " "
     const container = document.createElement("div");
     container.id = "container";
     content.appendChild(container);
@@ -117,5 +118,10 @@ export function menupage(){
         menuContainer.appendChild(menuItem)
      })
 
+}
+
+export function clearContent(){
+    const content = document.getElementById("content");
+    content.innerHTML = ""
 }
 

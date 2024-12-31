@@ -118,8 +118,10 @@ button{
     border-top-right-radius: 10px;
 }
 .menu-item:hover{
-    box-shadow: 4px 4px 10px 10px rgba(0,0,0, 0.6);
+    box-shadow: 4px 4px 10px 10px rgba(0,0,0, 0.7);
     cursor: pointer;
     opacity: 0.5;
+    width: 14rem;
+    height: 14rem;
 }
 
