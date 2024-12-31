@@ -1,14 +1,125 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    outline: 1px solid red;
+    
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(0,0,0, 0.9);
 }
 #container{
     width: calc(100vw - 5%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    height: 90vh;
+    display: grid;
     margin: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+        
 
+}
+.my-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#container .div1{
+    grid-column: 1 / 13;
+    background-color: aqua;
+    grid-row: 1 / 8
+    
+}
+#container .div2{
+    grid-column: 1 /13;
+    grid-row: 8 / 11;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#container .div3{
+    grid-column: 1 / 13;
+    grid-row: 11 / 17;
+    background-color: rgba(0,0,0, 0.9);
+}
+.description p{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 900;
+    color: goldenrod;
+    text-align: center;
+    margin-top: 4rem;
+    
+}
+.sample{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-top: 1rem;
+}
+.sample-burger{
+    width: 7rem;
+    height: auto;
+    grid-column: 5 / 10;
+    grid-row: 1 / 7;
+    border-radius: 15px;
+
+}
+.div3{
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: x-large;
+    font-style: oblique;
+}
+button{
+    display: inline-block;
+    
+}
+#menu-container{
+    padding: 1rem;
+    width: calc(100vw - 40%);
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.441);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.6rem;
+    justify-content: space-around;
+    
+}
+.menu-item{
+    width: 12rem;
+    height: 12rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    border-radius: 4px;
+
+
+}
+.menu-item .menu-photo{
+    grid-column: 1 / 13;
+    grid-row: 1 / 10;
+
+}
+.menu-item .menu-description{
+    background-color: black;
+    grid-column: 1 / 13;
+    grid-row: 10 / 13;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding: 10px
+}
+.item-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.menu-item:hover{
+    box-shadow: 4px 4px 10px 10px rgba(0,0,0, 0.6);
+    cursor: pointer;
+    opacity: 0.5;
 }
 
