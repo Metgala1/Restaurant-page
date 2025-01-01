@@ -121,10 +121,44 @@ export function menupage(){
 }
 export function about(){
     const content = document.getElementById("content");
-    const container = document.createElement("div");
+    content.innerHTML = `
+      <div class="about-container">
+        <div class="con-div1">
+            <h1>About Butcher's Grill burgers</h1>
 
-    container.innerHTML = `
-    div class
+            <p>At Butcher's Grill, we're not just flipping patties; we're crafting an experience. We believe a great burger is more than just meat between buns – it's a symphony of flavors, textures, and passion.</p>
+          
+            <h2>Our Story</h2>
+            <ul>
+              <li><strong>The Family Recipe:</strong> Our family recipe for burgers has been passed down for generations. We've perfected it with years of love and experimentation, and we're thrilled to share this tradition with you.</li>
+              <li><strong>The Culinary Adventure:</strong> [Owner Name] always dreamed of opening a restaurant where they could share their love of burgers with the world. After years of culinary exploration and honing their skills, [Restaurant Name] was born.</li>
+              <li><strong>The Community Focus:</strong> We wanted to create a space where the community could come together to enjoy delicious food and good company. [Restaurant Name] is more than just a burger joint; it's a gathering place for friends and family.</li>
+            </ul>
+          
+            <h2>What Makes Us Unique</h2>
+          
+            <ul>
+              <li><strong>Signature Sauce:</strong> Our secret sauce is the heart and soul of every burger. It's a unique blend of flavors that will have you coming back for more.</li>
+              <li><strong>Fresh, Local Ingredients:</strong> We prioritize quality and sustainability by sourcing our ingredients from local farms whenever possible.</li>
+              <li><strong>Creative Combinations:</strong> We're not afraid to get creative! From classic cheeseburgers to gourmet creations with unique toppings, we have something for everyone.</li>
+              <li><strong>Hand-Cut Fries:</strong> Our crispy, golden fries are made fresh daily and perfectly complement our juicy burgers.</li>
+            </ul>
+          
+            <h2>Our Commitment</h2>
+          
+            <p>We're committed to providing our customers with an exceptional dining experience. Our friendly staff is always ready to assist you and ensure you have a memorable meal.</p>
+          
+            <p>We strive for excellence in every burger we serve. We use only the highest quality ingredients and meticulous preparation to ensure consistent flavor and quality.</p>
+          
+            <h2>Call to Action</h2>
+          
+            <p>Ready to experience the [Restaurant Name] difference? Visit us today and discover why we're the talk of the town!</p>
+          
+        </div>
+        <div class="con-div2">
+        <img class="about-img" src=${firstSrc} alt="Butcher Grill restaurant">
+        </div>
+    </div>
     `
 }
 
