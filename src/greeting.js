@@ -119,9 +119,18 @@ export function menupage(){
      })
 
 }
+export function about(){
+    const content = document.getElementById("content");
+    const container = document.createElement("div");
+
+    container.innerHTML = `
+    div class
+    `
+}
+
+
 
 export function clearContent(){
     const content = document.getElementById("content");
     content.innerHTML = ""
 }
-

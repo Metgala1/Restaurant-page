@@ -124,4 +124,10 @@ button{
     width: 14rem;
     height: 14rem;
 }
+.about-container{
+    width: 90vw;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.3);
+    outline: 1px solid red;
+}
 
